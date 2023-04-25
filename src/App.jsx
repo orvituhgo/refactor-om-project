@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router , Route, Routes } from "react-router-dom";
+import { ToastContainer } from 'react-toastify'
 
 import NavBar from "./components/NavBar/index";
 import Login from './pages/Login/index'
@@ -25,7 +26,8 @@ export default function App() {
         </PrivateRoute>} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      <GlobalStyles/>
+      <GlobalStyles />
+      <ToastContainer autoClose={3000} className="toast-container" />
     </Router>
     
   )
