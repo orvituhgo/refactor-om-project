@@ -1,12 +1,12 @@
-import styled, { createGlobalStyle } from "styled-components";
-import { 
-    primaryColor, 
-    primaryDarkColor, 
-    errorColor, 
-    warnColor, 
-    successColor } from "../configs/colors";
+import styled, { createGlobalStyle } from 'styled-components';
+import {
+  primaryColor,
+  primaryDarkColor,
+  errorColor,
+  warnColor,
+  successColor,
+} from '../configs/colors';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -54,6 +54,10 @@ export const GlobalStyles = createGlobalStyle`
         background-color: ${errorColor};
         color: #fff;
     }
+    body .Toastify .Toastify__toast-container .Toastify__toast--warn {
+        background-color: ${warnColor};
+        color: #fff;
+    }
 
 `;
 
@@ -64,4 +68,4 @@ export const Container = styled.section`
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-`
+`;

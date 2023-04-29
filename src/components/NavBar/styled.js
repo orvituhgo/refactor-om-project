@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryColor } from '../../configs/colors'
+import { primaryColor } from '../../configs/colors';
 
 const nav = styled.nav`
   ul {
@@ -12,7 +12,7 @@ const nav = styled.nav`
   gap: 20px;
   }
 
-  a {
+  a, p {
     color: #fff;
     margin: 0 10px 0;
     font-weight: bold;
